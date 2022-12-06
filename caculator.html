@@ -7,21 +7,21 @@
 <body>
 <form>
   <h1 style="font-size: 70px">Caculator</h1>
-  <input type="text" id="van" onchange="romrom(event)">
-  <input type="text" id="bom" onchange="bipbip(event)"><br>
+  <input type="text" id="van" onchange="romRom(event)">
+  <input type="text" id="bom" onchange="bipBip(event)"><br>
   <button type="button" id="Cong" onclick="naMi()">Addition(+)</button>
-  <button type="button" id="Tru" onclick="jayCe()">Subtraction(-)</button>
-  <button type="button" id="Nhân" onclick="arhi()">Mutiplication(*)</button>
-  <button type="button" id="Chia" onclick="akaly()">Division(/)</button>
+  <button  type="button" id="Tru" onclick="jayCe()">Subtraction(-)</button>
+  <button type="button" id="Nhan" onclick="aRhi()">Multiplication(*)</button>
+  <button  type="button" id="Chia" onclick="aKaly()">Division(/)</button>
     <input  id="result" value="Result: ">
 </form>
 <script>
     let soA=0;
     let soB=0;
- function romrom(event) {
+ function romRom(event) {
       soA = event.target.value;
  }
-  function bipbip(event){
+  function bipBip(event){
       soB=event.target.value;
   }
   function naMi(){
@@ -32,11 +32,11 @@
         let H =parseInt(soA)-parseInt(soB);
         document.getElementById("result").value=H;
     }
-    function arhi(){
+    function aRhi(){
         let  N=parseInt(soA)*parseInt(soB);
         document.getElementById("result").value=N;
     }
-    function akaly(){
+    function aKaly(){
         let C =parseInt(soA)/parseInt(soB);
         document.getElementById("result").value=C;
     }
