@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Bán Kính(R)</label>
+<input type="text" id="radius" value="">
+<label>Chu vi</label>
+<input type="text" id="CV" value="">
+<button id="fndf" onclick="Nam()">Chu Vi</button>
+<script>
+  function Nam(){
+    let R=+document.getElementById('radius').value;
+    const PI=3.14;
+    let C=2*R*PI;
+    document.getElementById('CV').value=(''+C);
+  }
+</script>
+</body>
+</html>

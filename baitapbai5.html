@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<caption><h1>Điểm Trung Bình</h1></caption>-->
+<table border="1" style="border-collapse: collapse">
+    <tr>
+  <th></th>
+    <th>Lý</th>
+    <th>Hóa</th>
+    <th>Sinh</th>
+    </tr>
+  <tr>
+      <td>Điểm</td>
+      <td>
+          <input type="text" id="Lý" value="">
+      </td>
+      <td>
+          <input type="text" id="Hóa" value="">
+      </td>
+      <td>
+          <input type="text" id="Sinh" value="">
+      </td>
+  </tr>
+    <tr>
+        <td colspan="4" id="T">Tổng:</td>
+    </tr>
+    <tr>
+        <td colspan="4" id="ĐTB">Điểm Trung Bình:</td>
+    </tr>
+</table>
+    <button id="nut" onclick="showKQ()">Kết Quả</button>
+  <script>
+      function showKQ() {
+          let Lý = +document.getElementById('Lý').value;
+          let Hóa = +document.getElementById('Hóa').value;
+          let Sinh = +document.getElementById('Sinh').value;
+          let avg = (Lý + Hóa + Sinh) / 3;
+          let s = (Lý + Hóa + Sinh)
+          document.getElementById('T').innerHTML = ('Tổng:  ') + s;
+          document.getElementById('ĐTB').innerHTML = ('Điểm Trung Bình:  ') + avg;
+      }
+  </script>
+</body>
+</html>

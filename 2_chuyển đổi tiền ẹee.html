@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="border-collapse: collapse">
+  <tr>
+    <th >Amount</th>
+    <th>From Currency</th>
+    <th>To Currency</th>
+    <td></td>
+  </tr>
+  <tr>
+    <td><input type="text" style="width: 100px" id="Amount" ></td>
+    <td>
+      <select>
+      <option value="VND" id="E">VND</option>
+      <option value="USD" id="F">USD</option>
+      </select>
+    </td>
+    <td>
+      <select>
+        <option value="USD" id="G">USD</option>
+        <option value="VND" id="H">VND</option>
+      </select>
+    </td>
+    <td>
+      <button id="kathuss" onclick="Nasus()">Convert</button>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="4" id="N" >Result:</td>
+  </tr>
+</table>
+<script>
+  let E=document.getElementById("E").value;
+  let F=document.getElementById("F").value;
+  let G=document.getElementById("G").value;
+  let H=document.getElementById("H").value;
+  let O =+document.getElementById("Amount").value;
+  let P=O/23000;
+  let Q=O*23000;
+  function getFrom()
+  function Nasus() {
+    if (E==H) {console.log(E)
+      document.getElementById('N').innerHTML = ("Result: ") + O;
+    }
+    else if (F==G) {console.log(E)
+      document.getElementById('N').innerHTML = ("Result: ") + O;
+    }
+    else if (E==G) {
+      console.log(E)
+      document.getElementById("N").innerHTML = ("Result: ") + P;
+    }
+    else if(F==H) {console.log(E)
+      document.getElementById("N").innerHTML = ("Result: ") + Q;
+    }
+  }
+</script>
+</body>
+</html>

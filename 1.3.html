@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Bán Kính(R)</label>
+<input type="text" id="radius" value="">
+<label>Diện tích</label>
+<input type="text" id="DT" value="">
+<button id="dagds" onclick="show()">Diện tích</button>
+<script>
+  function show(){
+  let R=+document.getElementById('radius').value;
+  let S=R*R*3.14;
+  document.getElementById('DT').value=(''+S);
+  }
+</script>
+</body>
+</html>
